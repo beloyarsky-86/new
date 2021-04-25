@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<H1>Добро пожаловать на сайт об объектах недвижимости! Здесь можно записаться на просмотр жилья.</H1>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var primarySlider = new Splide('#primary-slider', {
+            type: 'fade',
+            heightRatio: 0.5,
+            pagination: false,
+            arrows: true,
+            cover: true,
+        }).mount(); // do not call mount() here.
+    });
+</script>
+{% endblock %}
